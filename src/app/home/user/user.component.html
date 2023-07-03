@@ -1,0 +1,89 @@
+   
+
+<div class="container" >
+    <h1 class="user">User Details</h1>
+
+
+    <div class="userview">
+
+   
+        <table class="corporateregister" >
+            <thead>
+                <tr>
+                          <th class="active-corporate" routerLink="/corporateregister" >
+                            Onboard New Corporate
+                        </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <h1 class="active">Active-corporate </h1>
+                            </th>
+                            
+                        </tr>
+                        <tr *ngFor="let user of corporateuserdata">
+                            <td class="data-td">
+                               {{user.name}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                demo
+                            </td>
+                        </tr>
+                       
+                  
+                        
+            </thead>
+    
+       
+        </table>
+    
+        <table class="tradereregister" >
+            <thead>
+                <tr>
+                    <th  class="active-trader" routerLink="/traderregister" >
+                        Onboard New Trader
+                    </th>
+                     </tr>
+                     <tr>
+                        <th>
+                            <h1 class="active">  Active Trader</h1>
+                           </th>                        
+                     </tr>
+                     <tr>
+                        <td>
+                            Demo
+                        </td>
+                    </tr>
+                    
+            </thead>
+        </table>
+    
+        <table class="intermediaryregister" >
+            <thead>
+                <tr>
+                    <th  class="active-intermediary" routerLink="/intermediaryregister">
+                        Onboard New Intermediary
+                    </th>
+                     </tr>
+                     <tr>
+                         <th>
+                             <h1 class="active">  Active Intermediary</h1>
+                            </th>
+                         </tr>
+                         <tr>
+                            <td >
+                                Demo
+                            </td>
+                            
+                        </tr>
+                       
+            </thead>
+        </table>
+    
+    
+    </div>
+
+
+</div>
+

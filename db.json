@@ -1,0 +1,143 @@
+{
+  "createcorporate": [
+    {
+      "ieccode": "DEmo",
+      "gstumber": "Demo",
+      "finacialsDocument": "demo",
+      "name": "demo",
+      "mobile": 7878,
+      "email": "demo",
+      "password": "demo",
+      "beneficiary": "demo",
+      "accountnumber": null,
+      "swiftcode": "demo",
+      "id": 1
+    },
+    {
+      "ieccode": "",
+      "gst": "",
+      "finacial": "",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "beneficiary": "",
+      "accountnumber": "",
+      "swiftcode": "",
+      "id": 2
+    },
+    {
+      "ieccode": "",
+      "gst": "",
+      "finacial": "",
+      "name": "ssdssd",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "beneficiary": "",
+      "accountnumber": "",
+      "swiftcode": "",
+      "id": 3
+    },
+    {
+      "ieccode": "",
+      "gst": "",
+      "finacial": "",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "beneficiary": "",
+      "accountnumber": "",
+      "swiftcode": "",
+      "id": 4
+    },
+    {
+      "ieccode": "",
+      "gst": "",
+      "finacial": "",
+      "name": "",
+      "mobile": "",
+      "email": "",
+      "password": "",
+      "beneficiary": "",
+      "accountnumber": "",
+      "swiftcode": "",
+      "id": 5
+    }
+  ],
+  "createtrader": [
+    {
+      "entityName": "Demo",
+      "ieccode": "15",
+      "gstumber": "asju125459aa",
+      "finacialsDocument": "demo",
+      "image": "abc",
+      "name": "demo",
+      "mobile": "989898989",
+      "email": "demo@gmail.com",
+      "beneficiary": "7845998545",
+      "accountnumber": "5487956655",
+      "swiftcode": "swiftcode",
+      "id": 1
+    },
+    {
+      "entityName": "Demo",
+      "ieccode": "15",
+      "gstumber": "asju125459aa",
+      "finacialsDocument": "demo",
+      "image": "abc",
+      "name": "demo",
+      "mobile": "989898989",
+      "email": "demo@gmail.com",
+      "beneficiary": "7845998545",
+      "accountnumber": "5487956655",
+      "swiftcode": "swiftcode",
+      "id": 2
+    },
+    {
+      "entityName": "Demo",
+      "ieccode": "15",
+      "gstumber": "asju125459aa",
+      "finacialsDocument": "demo",
+      "image": "abc",
+      "name": "demo",
+      "mobile": "989898989",
+      "email": "demo@gmail.com",
+      "beneficiary": "7845998545",
+      "accountnumber": "5487956655",
+      "swiftcode": "swiftcode",
+      "id": 3
+    }
+  ],
+  "createintermediary": [
+    {
+      "entityName": "Demo",
+      "ieccode": "15",
+      "gstumber": "asju125459aa",
+      "finacialsDocument": "demo",
+      "image": "abc",
+      "name": "demo",
+      "mobile": "989898989",
+      "email": "demo@gmail.com",
+      "beneficiary": "7845998545",
+      "accountnumber": "5487956655",
+      "swiftcode": "swiftcode",
+      "id": 1
+    },
+    {
+      "entityName": "Demo",
+      "ieccode": "15",
+      "gstumber": "asju125459aa",
+      "finacialsDocument": "demo",
+      "image": "abc",
+      "name": "demo",
+      "mobile": "989898989",
+      "email": "demo@gmail.com",
+      "beneficiary": "7845998545",
+      "accountnumber": "5487956655",
+      "swiftcode": "swiftcode",
+      "id": 2
+    }
+  ]
+}

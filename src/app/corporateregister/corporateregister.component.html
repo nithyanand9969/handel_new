@@ -1,0 +1,62 @@
+
+
+<div class="register-corporate" >
+    <h1 class="user">
+  
+        <u>Corporate Registeration</u>
+    </h1>
+      <form #corporateSignUp="ngForm" (ngSubmit)="Create(corporateSignUp.value)">
+
+             <table class="col-1">
+
+                <input type="text" class="form-input" ngmodel name ="entityName" placeholder="Please enter the Entity Name"> 
+           
+                <input type="text" class="form-input" ngModel name="ieccode"  placeholder="Please enter the IEC Code">
+              
+         
+               <div class="upload">
+
+                  <input type="text"  class="form-input" ngModel name="gstumber"  placeholder="Gst Document"> 
+         
+                  <input type="file" class="form-input-upload"  (change)="getFile($event)">
+
+                 </div> 
+           
+                 <div class="upload">
+
+                  <input type="text"  class="form-input" ngModel name="gstumber"  placeholder="Finacial Document"> 
+         
+                  <input type="file" class="form-input-upload"  (change)="getFile($event)">
+
+                 </div> 
+             </table>
+             <table class="col-2">
+
+                <input type="text" class="form-input" ngModel name="name"  placeholder="Please enter the  Name"> 
+           
+                <input type="number" class="form-input"  ngModel name="mobile" placeholder="Please enter the Mobile">
+         
+               <input type="text" class="form-input" ngModel name="email"  placeholder="Please enter the Email">
+
+               <input type="password" class="form-input" ngModel name="password"  placeholder="Please enter user password">
+
+             </table>
+             <table class="col-3">
+
+                <input type="text" class="form-input" ngModel name="beneficiary" placeholder="Please enter the  Beneficiary"> 
+           
+                <input type="number" class="form-input"  ngModel name="accountnumber" placeholder="Please enter the Account Number">
+         
+               <input type="text" class="form-input" ngModel name="swiftcode" placeholder="Please enter the Swift Code">
+
+             </table>
+
+             <button class="form-button" routerLink="/home/user">Cancel</button>
+             <button class="form-button-1">Save</button>
+             <button class="form-button-2">Create</button>
+
+    </form>
+
+
+
+</div>

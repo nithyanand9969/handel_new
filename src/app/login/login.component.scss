@@ -1,0 +1,45 @@
+
+.col-1{
+    margin-left: 620px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+
+}
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid rebeccapurple;
+    color: aliceblue;
+}
+.form-button{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 100px;
+    width: 100px;
+    background-color: rgb(4, 145, 37);
+
+}
+
+.login{
+    color: rgb(95, 105, 101);
+    padding: auto;
+    margin-top: 30px;
+    margin-left: 40px;
+    
+}
+.user{
+    color: rgb(99, 79, 79);
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 70px;
+
+}
+.container{
+    box-sizing: border-box;
+}

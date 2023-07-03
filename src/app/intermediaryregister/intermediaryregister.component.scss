@@ -1,0 +1,112 @@
+.user{
+    color: rgb(99, 79, 79);
+    margin-left: 520px;
+    margin-top: 100px;
+    
+  
+}
+.register{
+    color: rgb(95, 105, 101);
+    padding: auto;
+    margin-top: 50px;
+    
+}
+
+table td,table th{
+    border:1px solid rgb(101, 97, 97);
+
+    padding: 10px;
+    min-height: 160px;
+
+
+}
+table thead{
+    background-color: blue;
+    color: antiquewhite;
+}
+table tbody{
+    background-color: rgb(1, 105, 139);
+    color: antiquewhite;
+}
+
+
+
+
+.col-1{
+    margin-top: 10px;
+    margin-left: 200px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+
+}
+.col-2{
+    margin-top: 80px;
+    margin-left: 570px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+    margin-top:-240px;
+
+}
+
+.col-3{
+    margin-top: 80px;
+    margin-left: 950px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+    margin-top:-185px;
+
+}
+
+
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid rebeccapurple;
+    color: rgb(49, 50, 51);
+}
+.form-button{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 500px;
+    width: 100px;
+    background-color: rgb(188, 77, 77);
+
+}
+.form-button-1{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(160, 255, 160);
+
+
+}
+.form-button-2{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(160, 181, 226);
+
+}
+.upload{
+    display: flex;
+}

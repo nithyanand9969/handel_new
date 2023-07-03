@@ -1,0 +1,171 @@
+.user{
+    color: rgb(99, 79, 79);
+    margin-left: 450px;
+    margin-top: 10px;
+    
+  
+}
+.register{
+    color: rgb(95, 105, 101);
+    padding: auto;
+    margin-top: 50px;
+    
+}
+table{
+    margin-left: 150px;
+    border: 50px;
+    padding: auto;
+
+}
+
+table td,table th{
+    border:1px solid rgb(101, 97, 97);
+    padding: 10px;
+    min-height: 160px;
+
+
+}
+table thead{
+    background-color: blue;
+    color: antiquewhite;
+}
+table tbody{
+    background-color: rgb(1, 105, 139);
+    color: antiquewhite;
+}
+.active-corporate{
+    cursor: pointer;
+    
+}
+.active-corporate:hover{
+    cursor: pointer;
+    color: rgb(14, 88, 237);
+    background-color: rgb(252, 252, 252);
+}
+.active-trader{
+    cursor: pointer;
+ 
+}
+.active-trader:hover{
+    cursor: pointer;
+    color: rgb(14, 88, 237);
+    background-color: rgb(252, 252, 252);
+}
+.active-intermediary{
+  
+    cursor: pointer;
+}
+.active-intermediary:hover{
+    cursor: pointer;
+    color: rgb(14, 88, 237);
+    background-color: rgb(252, 252, 252);
+}
+
+
+.col-1{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+
+}
+.col-2{
+    margin-left: 400px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+    margin-top:-240px;
+
+}
+
+.col-3{
+    margin-left: 750px;
+    display: flex;
+    flex-direction: column;   
+    text-align: center;
+    width: 300px;
+    padding-top: 20px;
+    margin-top:-185px;
+
+}
+
+
+.form-input{
+    height: 35px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    border: 1px solid rebeccapurple;
+    color: aliceblue;
+}
+.form-button{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 250px;
+    width: 100px;
+    background-color: rgb(188, 77, 77);
+
+}
+.form-button-1{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 100px;
+    border-radius: 20px;
+    background-color: rgb(160, 255, 160);
+
+
+}
+.form-button-2{
+    height: 35px;
+    border: 1px solid rgb(0, 121, 48);
+    cursor: pointer;
+    margin-top: 70px;
+    margin-left: 20px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: rgb(160, 181, 226);
+
+}
+.userview{
+    display: flex;
+    padding: 2px;
+   margin-left: 80px;
+    margin-top: 40px;
+    position: fixed;
+    align-items: center;
+    justify-content: space-around;
+
+}
+.corporateregister{
+    width: 220px;
+    margin: auto;
+
+}
+.tradereregister{
+    width: 220px;
+    margin: auto;
+}
+.intermediaryregister{
+   
+    width: 250px;
+    margin: auto;
+}
+.active{
+    width: 180px;
+    font-size: medium;
+    padding-left: 20px;
+
+}
+.tab-data{
+    align-items: center;
+    margin-left: 50px;
+
+}
