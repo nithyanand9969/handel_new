@@ -1,107 +1,125 @@
-.user{
+.user {
     color: rgb(99, 79, 79);
-    margin-left: 450px;
+    margin-left: 350px;
     margin-top: 10px;
-    
-  
+
 }
-.register{
+
+.register {
     color: rgb(95, 105, 101);
     padding: auto;
     margin-top: 50px;
-    
+
 }
-table{
-    margin-left: 150px;
+
+table {
+    margin-left: 50px;
     border: 50px;
     padding: auto;
+    width: 200%;
 
 }
 
-table td,table th{
-    border:1px solid rgb(101, 97, 97);
+table td,
+table th {
+    border: 1.5px solid rgb(101, 97, 97);
     padding: 10px;
     min-height: 160px;
-
+    width: 200%;
 
 }
-table thead{
+
+table thead {
     background-color: blue;
     color: antiquewhite;
+    position: relative;
+    padding: 15px;
+
 }
-table tbody{
+
+table tbody {
     background-color: rgb(1, 105, 139);
     color: antiquewhite;
 }
-.active-corporate{
+
+.active-corporate {
     cursor: pointer;
-    
 }
-.active-corporate:hover{
-    cursor: pointer;
-    color: rgb(14, 88, 237);
-    background-color: rgb(252, 252, 252);
-}
-.active-trader{
-    cursor: pointer;
- 
-}
-.active-trader:hover{
+
+.active-corporate:hover {
     cursor: pointer;
     color: rgb(14, 88, 237);
     background-color: rgb(252, 252, 252);
 }
-.active-intermediary{
-  
+
+.active-trader {
+    cursor: pointer;
+
+}
+
+.active-trader:hover {
+    cursor: pointer;
+    color: rgb(14, 88, 237);
+    background-color: rgb(252, 252, 252);
+}
+
+.active-intermediary {
+
     cursor: pointer;
 }
-.active-intermediary:hover{
+
+.active-intermediary:hover {
     cursor: pointer;
     color: rgb(14, 88, 237);
     background-color: rgb(252, 252, 252);
 }
 
 
-.col-1{
+.col-1 {
     margin-left: 50px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     text-align: center;
     width: 300px;
     padding-top: 20px;
+    position: fixed;
 
 }
-.col-2{
-    margin-left: 400px;
+
+.col-2 {
+    margin-left: 450px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     text-align: center;
     width: 300px;
     padding-top: 20px;
-    margin-top:-240px;
+    margin-top: -240px;
+    position: fixed;
 
 }
 
-.col-3{
+.col-3 {
     margin-left: 750px;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column;
     text-align: center;
     width: 300px;
     padding-top: 20px;
-    margin-top:-185px;
+    margin-top: -185px;
+    position: fixed;
 
 }
 
 
-.form-input{
+.form-input {
     height: 35px;
     margin-bottom: 20px;
     padding-left: 10px;
     border: 1px solid rebeccapurple;
     color: aliceblue;
 }
-.form-button{
+
+.form-button {
     height: 35px;
     border: 1px solid rgb(0, 121, 48);
     cursor: pointer;
@@ -111,7 +129,8 @@ table tbody{
     background-color: rgb(188, 77, 77);
 
 }
-.form-button-1{
+
+.form-button-1 {
     height: 35px;
     border: 1px solid rgb(0, 121, 48);
     cursor: pointer;
@@ -123,7 +142,8 @@ table tbody{
 
 
 }
-.form-button-2{
+
+.form-button-2 {
     height: 35px;
     border: 1px solid rgb(0, 121, 48);
     cursor: pointer;
@@ -134,38 +154,57 @@ table tbody{
     background-color: rgb(160, 181, 226);
 
 }
-.userview{
+
+.userview {
     display: flex;
     padding: 2px;
-   margin-left: 80px;
+    margin-left: 80px;
     margin-top: 40px;
     position: fixed;
     align-items: center;
     justify-content: space-around;
 
 }
-.corporateregister{
+
+.corporateregister {
     width: 220px;
     margin: auto;
+    margin-top: 0px;
+
 
 }
-.tradereregister{
+
+.tradereregister {
     width: 220px;
     margin: auto;
+    margin-top: 0px;
 }
-.intermediaryregister{
-   
+
+.intermediaryregister {
+
     width: 250px;
     margin: auto;
+    margin-top: 0px;
 }
-.active{
+
+.active {
     width: 180px;
     font-size: medium;
     padding-left: 20px;
 
 }
-.tab-data{
+
+.tab-data {
     align-items: center;
     margin-left: 50px;
 
+}
+
+tbody {
+    text-align: center;
+}
+
+.userview {
+
+    cursor: pointer;
 }

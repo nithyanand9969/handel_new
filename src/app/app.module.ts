@@ -24,6 +24,12 @@ import { CorporateregisterComponent } from './corporateregister/corporateregiste
 import { TraderregisterComponent } from './traderregister/traderregister.component';
 import { IntermediaryregisterComponent } from './intermediaryregister/intermediaryregister.component';
 import { HttpClientModule } from '@angular/common/http';
+import { LogoutComponent } from './home/logout/logout.component';
+import { ResetPasswordComponent } from './reset-password/reset-password.component';
+import { UserinfoComponent } from './home/userinfo/userinfo.component';
+import { FooterComponent } from './footer/footer.component';
+import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+
 
 
 
@@ -47,19 +53,25 @@ import { HttpClientModule } from '@angular/common/http';
     RegisterComponent,
     CorporateregisterComponent,
     TraderregisterComponent,
-    IntermediaryregisterComponent
+    IntermediaryregisterComponent,
+    LogoutComponent,
+    ResetPasswordComponent,
+    UserinfoComponent,
+    FooterComponent,
+    ForgetpasswordComponent,
     
+
   ],
   imports: [
-  
-  BrowserModule,
+
+    BrowserModule,
     AppRoutingModule,
     FontAwesomeModule,
     FormsModule,
     HttpClientModule,
     NgChartsModule,
-    
- 
+
+
 
   ],
   providers: [],

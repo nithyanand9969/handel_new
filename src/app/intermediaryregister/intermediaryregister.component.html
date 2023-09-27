@@ -1,23 +1,14 @@
-
-
 <div class="register-corporate" >
     <h1 class="user">
-  
-        <u> Intermediary Registeration</u>
+          <u> Intermediary Registeration</u>
     </h1>
       <form #corporateSignUp="ngForm" (ngSubmit)="Create(corporateSignUp.value)">
-
              <table class="col-1">
-
                 <input type="text" class="form-input" ngmodel name = "entityName" placeholder="Please enter the Entity Name"> 
-           
                 <input type="text" class="form-input" ngModel name="ieccode"  placeholder="Please enter the IEC Code">
-              
                 <div class="upload">
-
-                  <input type="text"  class="form-input" ngModel name="gstumber"  placeholder="Gst Document"> 
-         
-                  <input type="file" class="form-input-upload"  (change)="getFile($event)">
+                <input type="text"  class="form-input" ngModel name="gstumber"  placeholder="Gst Document"> 
+                     <input type="file" class="form-input-upload"  (change)="getFile($event)">
 
                  </div> 
            
@@ -51,7 +42,6 @@
          
                <input type="text" class="form-input" ngModel name="swiftcode" placeholder="Please enter the Swift Code">
               
-
              </table>
 
              <button class="form-button" routerLink="/home/user" >Cancel</button>

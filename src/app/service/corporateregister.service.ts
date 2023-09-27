@@ -8,17 +8,20 @@ import { HttpClient } from '@angular/common/http';
 })
 export class CorporateregisterService {
 
-  constructor(private http:HttpClient) { }
+  constructor(private http: HttpClient) { }
 
-  corporateSignUp(data:any){
-    return this.http.post('http://localhost:3000/createcorporate',data)
-  }
+  // corporateSignUp(registration: any) {
+
+  //   return this.http.post<object>('http://localhost:8080/handel/handel', registration)
+
+  // }
 
 
-  getcorporateuser(){
-    return this.http.get('http://localhost:3000/createcorporate');
-  }
- 
+  // getcorporateuser() {
+
+  //   return this.http.get<object>('getRegistrationList');
+  // }
+
 
 }
 

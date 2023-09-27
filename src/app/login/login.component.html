@@ -1,23 +1,29 @@
-<div class="container">
 
-    <h1 class="user">
-        LOGIN
-    </h1>
+    <div class="card">
 
-    <form class="login">
+    <div class="container">
+
+    <h1 class="user">Sign In </h1>
+    <hr class="hr">
+
+    <form class="login" (ngSubmit)="Login()">
 
         <table class="col-1">
 
-            <input type="text" class="form-input" ngmodel name = "email" placeholder="Please Enter the Email ID"> 
+            <input type="text" class="form-input"  placeholder="Please Enter the Email ID" ngModel name="emailId"   required [(ngModel)]="user.emailId"/> 
        
-         
-     
-            <input type="text"  class="form-input" ngModel name="password"  placeholder="please Enter the Password"> 
+            <input type="text" class="form-input" ngModel name="password"  placeholder="Please Enter the Password" required [(ngModel)]="user.password"/> 
 
-     
-           <button class="form-button">Cancel</button>
-         </table>
+            <div class="btn">
 
-        
-    </form>
+                <button class="form-button">Submit</button>
+
+                <button class="form-button-sub" type="button" routerLink="/forgetpassword">Forgot-Password</button>
+          
+            </div>
+
+            </table>
+
+        </form>
+    </div>
 </div>

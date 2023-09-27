@@ -4,6 +4,7 @@ import {Router} from '@angular/router';
 
 import { HttpClientModule } from '@angular/common/http';
 import { CorporateregisterService } from 'src/app/service/corporateregister.service';
+import { NetworkcallService } from 'src/app/service/networkcall.service';
 
  
 
@@ -14,24 +15,23 @@ import { CorporateregisterService } from 'src/app/service/corporateregister.serv
   styleUrls: ['./user.component.scss']
 })
 export class UserComponent  implements OnInit{
-
-CorporateregisterService: any;
-
-
-constructor(private router:Router,private http:HttpClientModule,private corporate:CorporateregisterService){
+  corporateuser:any;
+ constructor(public url:NetworkcallService){
 }
 
-corporateuserdata:any 
-
-getcorporateuser(){
-
-  this.corporate.getcorporateuser().subscribe((res: any) =>{
-    this.corporateuserdata = res;
-  });  
+selectUser(user: any): void {
+  this.selectUser = user;
 }
-
 ngOnInit(): void {
-  this.corporateuserdata();
+  
+  this.url.getcorporateuser().subscribe((res:any) =>{
+    this.corporateuser = res;
+    
+  }); 
 }
 
 }
+
+
+
+

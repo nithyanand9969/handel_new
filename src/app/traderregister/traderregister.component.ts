@@ -1,4 +1,8 @@
 import { Component } from '@angular/core';
+import { TraderService } from './../services/trader.service';
+import { Router } from '@angular/router';
+import { ClientRegisteration } from '../model/client-registeration';
+import { NetworkcallService } from '../service/networkcall.service';
 
 @Component({
   selector: 'app-traderregister',
@@ -6,21 +10,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./traderregister.component.scss']
 })
 export class TraderregisterComponent {
-  name:String =""
-  file:any;
 
-  getName(name:String){
+  TraderRigi:  ClientRegisteration = new ClientRegisteration();
+constructor(private urlservice:NetworkcallService,private router:Router){}
 
-    this.name = name;
-  }
-  getFile(event:any){
 
-    this.file = event.target.files[0];
-  }
-  
-  Create(data:object):void{
-    console.warn(data)
+submitData() {
 
-  }
+  this.urlservice.createTraderRegi(this.TraderRigi).subscribe((res) => {
+    console.log(res);
+    this.router.navigate(['/home/user']);
+
+  });
+
 
 }
+
+}
+

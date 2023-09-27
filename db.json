@@ -1,69 +1,33 @@
 {
-  "createcorporate": [
+  "createcorporate": [{
+
+    "handelId": 6,
+    "iecCode": null,
+    "gstCertificate": " ",
+    "financials": " ",
+    "userName": "Test1",
+    "mobile": "5678678978",
+    "email": "sam@gmail.com",
+    "beneficiaryName": "sada",
+    "accountNumber": "56456464",
+    "swiftCode": "addad"
+  }
+    
+ ,
     {
-      "ieccode": "DEmo",
-      "gstumber": "Demo",
-      "finacialsDocument": "demo",
-      "name": "demo",
-      "mobile": 7878,
-      "email": "demo",
-      "password": "demo",
-      "beneficiary": "demo",
-      "accountnumber": null,
-      "swiftcode": "demo",
-      "id": 1
-    },
-    {
-      "ieccode": "",
-      "gst": "",
-      "finacial": "",
-      "name": "",
-      "mobile": "",
-      "email": "",
-      "password": "",
-      "beneficiary": "",
-      "accountnumber": "",
-      "swiftcode": "",
-      "id": 2
-    },
-    {
-      "ieccode": "",
-      "gst": "",
-      "finacial": "",
-      "name": "ssdssd",
-      "mobile": "",
-      "email": "",
-      "password": "",
-      "beneficiary": "",
-      "accountnumber": "",
-      "swiftcode": "",
-      "id": 3
-    },
-    {
-      "ieccode": "",
-      "gst": "",
-      "finacial": "",
-      "name": "",
-      "mobile": "",
-      "email": "",
-      "password": "",
-      "beneficiary": "",
-      "accountnumber": "",
-      "swiftcode": "",
-      "id": 4
-    },
-    {
-      "ieccode": "",
-      "gst": "",
-      "finacial": "",
-      "name": "",
-      "mobile": "",
-      "email": "",
-      "password": "",
-      "beneficiary": "",
-      "accountnumber": "",
-      "swiftcode": "",
-      "id": 5
+      "handelId": 123,
+      "ifscCode": "SBIN0001654",
+      "gstCertificate": " ",
+      "financials": " ",
+      "userName": "Tes2",
+      "mobile": "5678678978",
+      "email": "sam@gmail.com",
+      "beneficiaryName": "sada",
+      "accountNumber": "56456464",
+      "swiftCode": "addad",
+      "gstCertificateName": "vhhgh",
+      "financialsName": "zdsds",
+      "id": 17
     }
   ],
   "createtrader": [
