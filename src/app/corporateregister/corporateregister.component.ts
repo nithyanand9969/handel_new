@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 import { ClientRegisteration } from '../model/client-registeration';
 import { NetworkcallService } from '../service/networkcall.service';
-
-
 
 @Component({
   selector: 'app-corporateregister',
@@ -12,23 +9,19 @@ import { NetworkcallService } from '../service/networkcall.service';
   styleUrls: ['./corporateregister.component.scss']
 })
 export class CorporateregisterComponent {
-
-
   selectedImage: File | undefined;
   selectedFinancialDocument: File | undefined;
-  
   clientReg: ClientRegisteration = new ClientRegisteration();
 
-  constructor(public router: Router, public urlservice: NetworkcallService) { }
+  constructor(private router: Router, private urlservice: NetworkcallService) {}
 
   onImageSelected(event: any) {
     this.selectedImage = event.target.files[0];
-
-  }
-  onFinancialDocumentSelected(event:any){
-    this.selectedImage = event.target.files[0];
   }
 
+  onFinancialDocumentSelected(event: any) {
+    this.selectedFinancialDocument = event.target.files[0];
+  }
 
   submitData() {
     if (!this.selectedImage || !this.selectedFinancialDocument) {
@@ -36,60 +29,25 @@ export class CorporateregisterComponent {
       return;
     }
 
-    const clientRegi = new FormData();
+    const formData = new FormData();
 
-    clientRegi.append('entityName', this.clientReg?.entityName?.toString() ?? '');
-    clientRegi.append('iecCode', this.clientReg?.iecCode?.toString() ?? '');
-    clientRegi.append('userName', this.clientReg?.userName?.toString() ?? '');
-    clientRegi.append('mobileNumber', this.clientReg?.mobileNumber?.toString() ?? '');
-    clientRegi.append('emailId', this.clientReg?.emailId?.toString() ?? '');
-    clientRegi.append('password', this.clientReg?.password?.toString() ?? '');
-    clientRegi.append('beneficiary', this.clientReg?.beneficiary?.toString() ?? '');
-    clientRegi.append('accuntNumber', this.clientReg?.accuntNumber?.toString() ?? '');
-    clientRegi.append('swiftCode', this.clientReg?.swiftCode?.toString() ?? '');
-  
-  // Cast to string
-  clientRegi.append('gstCertificate', this.selectedImage as Blob);
-  clientRegi.append('financialDocument', this.selectedFinancialDocument as Blob);
+    formData.append('entityName', String(this.clientReg.entityName || ''));
+    formData.append('iecCode', String(this.clientReg.iecCode || ''));
+    formData.append('userName', String(this.clientReg.userName || ''));
+    formData.append('mobileNumber', String(this.clientReg.mobileNumber || ''));
+    formData.append('emailId', String(this.clientReg.emailId || ''));
+    formData.append('password', String(this.clientReg.password || ''));
+    formData.append('beneficiary', String(this.clientReg.beneficiary || ''));
+    formData.append('accuntNumber', String(this.clientReg.accuntNumber || ''));
+    formData.append('swiftCode', String(this.clientReg.swiftCode || ''));
 
-  
-    // this.urlservice.createCorporateRegi(clientRegi).subscribe((res) => {
-    //   console.log(res);
-    //   this.router.navigate(['/home/user']);
-    // });
+    formData.append('gstCertificate', this.selectedImage);
+    formData.append('financialDocument', this.selectedFinancialDocument);
+
+    // Uncomment the following lines when you want to make the API call
+    this.urlservice.createCorporateRegi(formData).subscribe((res) => {
+      console.log(res);
+      this.router.navigate(['/home/user']);
+    });
   }
 }
-
-
-  // corportateRegisterationModel: Corporateregister = new Corporateregister();
-
-
-  // Create(registration:object):void{
-  //  this.corporate.corporateSignUp(registration).subscribe((result)=>{
-  //  if(result){
-  //   this.router.navigate(['/home/user']);
-  //   alert(JSON.stringify(result));
-  //    }
-  //   else
-  //    {
-  //   this.router.navigate(['/login'])
-  //   }
-
-  //  });
-
-
-  // }
-
-  // submitData() {
-
-  //   this.urlservice.createCorporateRegi(this.clientReg).subscribe((res) => {
-  //     console.log(res);
-  //     this.router.navigate(['/home/user']);
-
-  //   });
-
-
-  // }
-
-
-

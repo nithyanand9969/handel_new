@@ -21,11 +21,10 @@ export class NetworkcallService {
   constructor(public httpclient: HttpClient) {
 
   }
-  createCorporateRegi(clientRegi: ClientRegisteration): Observable<Object> {
+  createCorporateRegi(formData: FormData): Observable<Object> {
 
-    return this.httpclient.post('http://localhost:8081/auth/createUser', clientRegi)
+    return this.httpclient.post('http://localhost:8081/auth/createCorporateUser', formData);
   }
-
   createTraderRegi(TraderRigi: ClientRegisteration): Observable<Object> {
 
     return this.httpclient.post('http://localhost:8081/auth/createUser', TraderRigi);

@@ -1,26 +1,19 @@
-// import { inject } from '@angular/core';
-// import { CanActivateFn, Router } from '@angular/router';
+import { Injectable } from '@angular/core';
+import { CanActivate, Router } from '@angular/router';
+import { AuthService } from './auth.service';
 
-// // const router = new Router();
+@Injectable({
+  providedIn: 'root'
+})
+export class AuthGuard implements CanActivate {
+  constructor(private authService: AuthService, private router: Router) {}
 
-// export const authGuard: CanActivateFn = (route, state) => {
-
-//   // const token = localStorage.getItem('token');
-
-//   // const router = inject(Router);
-
-//   // console.log('token', token)
-
-//   // if(token)
-//   // {
-//   //   router.navigate(['/home/user'])
-//   //   return true;
-
-//   // }
-//   // else {
-//   //   router.navigate(['/login']);
-//   //   return false;
-
-//   // }
- 
-// };
+  canActivate(): boolean {
+    if (this.authService.isAuthenticated()) {
+      return true; // User is authenticated, allow access to the route
+    } else {
+      this.router.navigate(['/login']); // User is not authenticated, redirect to the login page
+      return false; // Prevent access to the protected route
+    }
+  }
+}

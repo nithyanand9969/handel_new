@@ -1,54 +1,30 @@
 <div class="register-corporate">
   <h1 class="user">
-
-    <u>Corporate Registeration</u>
+    <u>Corporate Registration</u>
   </h1>
-  <form (ngSubmit)="submitData()">
+  <form (ngSubmit)="submitData()" enctype="multipart/form-data">
 
     <table class="col-1">
-
       <input type="text" class="form-input" [(ngModel)]="clientReg.entityName" name="EntityName"
         placeholder="Please enter the Entity Name">
 
       <input type="text" class="form-input" [(ngModel)]="clientReg.iecCode" name="ieccode"
         placeholder="Please enter the IEC Code">
 
-      <!-- <div class="upload">
-        <label class="lable">GST Certificates</label>
-        <input type="file" class="form-input-file" [(ngModel)]="clientReg.gstCertificates" name="gstCertificate"
-          title="GST Document">
-      </div>
       <div class="upload">
-        <label class="lable">Finaical document</label>
+        <label class="label">GST Certificates</label>
+        <input type="file" name="gst" accept="image/*">
+      </div>
 
-        <input type="file" class="form-input-file" [(ngModel)]="clientReg.finacialCetificates" name="financials"
-          title="Finaical Document">
-
-      </div> -->
-<!--       
-      <label for="image">Image:</label>
-      <input type="file" id="image" name="image" (change)="onImageSelected($event)" accept="image/*" class="form-control" required>
-   -->
-   <div class="upload">
-    <label class="lable">GST Certificates</label>
-    <input type="file" class="form-input-file" (change)="onImageSelected($event)" accept="image/*">
-  </div>
-<!-- 
-
-      <input type="text" class="form-input" [(ngModel)]="clientReg.finacialCetificates" name="finacialCetificates"
-        placeholder="financial"> -->
-        <div class="upload">
-          <label class="lable">Financial Document</label>
-          <input type="file" class="form-input-file" (change)="onFinancialDocumentSelected($event)" accept="application/pdf">
-        </div>
-        
-
-
+      <div class="upload">
+        <label class="label">Financial Document</label>
+        <input type="file" name="financial" accept="application/pdf">
+      </div>
     </table>
-    <table class="col-2">
 
+    <table class="col-2">
       <input type="text" class="form-input" [(ngModel)]="clientReg.userName" name="userName"
-        placeholder="Please enter the  Name">
+        placeholder="Please enter the Name">
 
       <input type="text" class="form-input" [(ngModel)]="clientReg.mobileNumber" name="mobileNumber"
         placeholder="Please enter the Mobile">
@@ -57,12 +33,10 @@
         placeholder="Please enter the Email">
 
       <input type="text" class="form-input" [(ngModel)]="clientReg.password" name="Password"
-        placeholder="Please enter the Passwprd">
-
-
+        placeholder="Please enter the Password">
     </table>
-    <table class="col-3">
 
+    <table class="col-3">
       <input type="text" class="form-input" [(ngModel)]="clientReg.beneficiary" name="beneficiary"
         placeholder="Please enter user beneficiaryName">
 
@@ -71,15 +45,10 @@
 
       <input type="text" class="form-input" [(ngModel)]="clientReg.swiftCode" name="swiftCode"
         placeholder="Please enter the Swift Code">
-
     </table>
 
     <button class="form-button" routerLink="/home/user">Cancel</button>
     <button class="form-button-1">Save</button>
     <button class="form-button-2" type="submit">Create</button>
-
   </form>
-
-
-
 </div>
