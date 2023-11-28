@@ -10,16 +10,16 @@
 
       <input type="text" class="form-input" [(ngModel)]="clientReg.iecCode" name="ieccode"
         placeholder="Please enter the IEC Code">
-
-      <div class="upload">
-        <label class="label">GST Certificates</label>
-        <input type="file" name="gst" accept="image/*">
-      </div>
-
-      <div class="upload">
-        <label class="label">Financial Document</label>
-        <input type="file" name="financial" accept="application/pdf">
-      </div>
+        <div class="upload">
+          <label for="gstFile" class="form-label">GST Document</label>
+          <input id="gstFile" class="file" type="file" name="gst"  accept="image/*" (change)="onImageSelected($event)">
+        </div>
+        <br>
+        <div class="upload">
+          <label for="financialFile" class="form-label">Financial Document</label>
+          <input id="financialFile" class="file" type="file" name="financial" accept="*/*" (change)="onFinancialDocumentSelected($event)">
+        </div>
+        
     </table>
 
     <table class="col-2">
@@ -32,8 +32,7 @@
       <input type="text" class="form-input" [(ngModel)]="clientReg.emailId" name="emailId"
         placeholder="Please enter the Email">
 
-      <input type="text" class="form-input" [(ngModel)]="clientReg.password" name="Password"
-        placeholder="Please enter the Password">
+      
     </table>
 
     <table class="col-3">
@@ -47,7 +46,7 @@
         placeholder="Please enter the Swift Code">
     </table>
 
-    <button class="form-button" routerLink="/home/user">Cancel</button>
+    <button class="form-button" routerLink="/admin/user">Cancel</button>
     <button class="form-button-1">Save</button>
     <button class="form-button-2" type="submit">Create</button>
   </form>

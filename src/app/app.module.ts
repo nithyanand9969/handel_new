@@ -29,6 +29,10 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 import { UserinfoComponent } from './home/userinfo/userinfo.component';
 import { FooterComponent } from './footer/footer.component';
 import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.component';
+import { UsersComponent } from './users/users.component';
+import { UserSideNavComponent } from './user-side-nav/user-side-nav.component';
+import { MatSelectModule } from '@angular/material/select';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 
@@ -60,6 +64,9 @@ import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.compone
     UserinfoComponent,
     FooterComponent,
     ForgetpasswordComponent,
+    UsersComponent,
+    UserSideNavComponent,
+    
     
 
   ],
@@ -71,6 +78,8 @@ import { ForgetpasswordComponent } from './forgetpassword/forgetpassword.compone
     FormsModule,
     HttpClientModule,
     NgChartsModule,
+    BrowserAnimationsModule,
+    MatSelectModule,
 
 
 

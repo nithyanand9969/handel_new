@@ -1,12 +1,20 @@
+.register-corporate {
+
+    border-radius: 50px;
+    border-width: 1px;
+    border-color: gray;
+   
+    
+}
 .user {
     color: rgb(99, 79, 79);
-    margin-left: 580px;
-    margin-top: 70px;
+    margin-left: 420px;
+    margin-top: 50px;
    
     font-size: 24px;
     justify-content: center;
     font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 50px;
 
 
 }
@@ -18,10 +26,11 @@
 
 }
 
+
+
 table td,
 table th {
     border: 1px solid rgb(101, 97, 97);
-
     padding: 10px;
     min-height: 160px;
 
@@ -43,7 +52,7 @@ table tbody {
 
 .col-1 {
     margin-top: 10px;
-    margin-left: 200px;
+    margin-left: 50px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -54,7 +63,7 @@ table tbody {
 
 .col-2 {
     margin-top: 80px;
-    margin-left: 570px;
+    margin-left: 400px;
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -66,13 +75,14 @@ table tbody {
 
 .col-3 {
     margin-top: 80px;
-    margin-left: 950px;
+    margin-left: 720px;
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 300px;
     padding-top: 20px;
     margin-top: -185px;
+    padding-right: 0px;
 
 }
 
@@ -101,7 +111,7 @@ table tbody {
     border: 1px solid rgb(0, 121, 48);
     cursor: pointer;
     margin-top: 70px;
-    margin-left: 500px;
+    margin-left: 400px;
     width: 100px;
     background-color: rgb(188, 77, 77);
 
@@ -146,4 +156,7 @@ table tbody {
     font-size: 12px;
 
 
+}
+.file{
+    margin-left: 20px;
 }

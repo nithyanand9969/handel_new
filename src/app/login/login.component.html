@@ -1,17 +1,18 @@
 <div class="card">
-    <div class="container">
-      <h1 class="user">Sign In</h1>
-      <hr class="hr">
-      <form class="login" (ngSubmit)="login()">
-        <table class="col-1">
-          <input type="text" class="form-input" placeholder="Email" [(ngModel)]="user.email" name="email" required>
-          <input type="password" class="form-input" placeholder="Password" [(ngModel)]="user.password" name="password" required>
-          <div class="btn">
-            <button class="form-button" type="submit">Submit</button>
-            <button class="form-button-sub" type="button" routerLink="/forgetpassword">Forgot Password</button>
-          </div>
-        </table>
-      </form>
-    </div>
+  <div class="container">
+    <h1 class="user">Sign In</h1>
+    <hr class="hr">
+    <form class="login" (ngSubmit)="login()">
+      <table class="col-1">
+        <input type="text" class="form-input" placeholder="Email" [(ngModel)]="emailId" name="emailId" required>
+        <input type="password" class="form-input" placeholder="Password" [(ngModel)]="password" name="password" required>
+        <div class="btn">
+          <button class="form-button" type="submit">Submit</button>
+          <button class="form-button-sub" type="button" routerLink="/forgotpassword">Forgot Password</button>
+        </div>
+        <!-- Display error message -->
+        
+      </table>
+    </form>
   </div>
-  
+</div>

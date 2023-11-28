@@ -10,12 +10,9 @@ import { LoginModel } from '../login/login-model';
   providedIn: 'root'
 })
 export class NetworkcallService {
-
-  userLogin: any;
-
-  // private URLRegisteration="http://localhost:8080/client/registeration"
-
-  // private baseUrl = 'http://localhost:8080/client/login';
+  getTotalUsers() {
+    throw new Error('Method not implemented.');
+  }
 
 
   constructor(public httpclient: HttpClient) {
@@ -23,22 +20,20 @@ export class NetworkcallService {
   }
   createCorporateRegi(formData: FormData): Observable<Object> {
 
-    return this.httpclient.post('http://localhost:8081/auth/createCorporateUser', formData);
+    return this.httpclient.post('http://localhost:8080/auth/uploadFileAndUser', formData);
   }
   createTraderRegi(TraderRigi: ClientRegisteration): Observable<Object> {
 
     return this.httpclient.post('http://localhost:8081/auth/createUser', TraderRigi);
   }
 
-  getcorporateuser() {
-    return this.httpclient.get('http://localhost:8080/client/getRegistrationList');
+ 
+  getcorporateuser(): Observable<any[]> {
+    return this.httpclient.get<any[]>('http://localhost:8080/home/user');
   }
 
 
-  logincor(user: LoginModel): Observable<object> {
-
-    console.log(user);
-
+  loginUser(user: LoginModel): Observable<any> {
     return this.httpclient.post('http://localhost:8080/auth/login', user);
   }
 

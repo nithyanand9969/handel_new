@@ -2,10 +2,11 @@
   <h1 class="user">User Details</h1>
 
   <div class="userview">
+    <!-- Corporate Register Table -->
     <table class="corporateregister">
       <thead>
         <tr>
-          <th class="active-corporate" routerLink="/corporateregister">Onboard New Corporate</th>
+          <th class="active-corporate" routerLink="/admin/corporateregister">Onboard New Corporate</th>
         </tr>
         <tr>
           <th>
@@ -14,29 +15,29 @@
         </tr>
       </thead>
       <tbody>
-        
-        <tr *ngFor="let user of corporateuser">
-         <td routerLink="../userinfo">{{user.entityName}}</td>
+        <!-- Loop through 'corporateuser' array and display entity names -->
+        <tr *ngFor="let user of corporateUsers">
+          <td routerLink="../userinfo">{{user.entityName}}</td>
         </tr>
       </tbody>
     </table>
 
+    <!-- Trader Register Table -->
     <table class="tradereregister">
       <thead>
         <tr>
-          <th class="active-trader" routerLink="/traderregister">Onboard New | Traders</th>
+          <th class="active-trader" routerLink="/traderregister">Onboard New   Traders</th>
         </tr>
         <tr>
           <th>
             <h1 class="active">Active Trader</h1>
           </th>
         </tr>
-        <tr>
-          <td></td>
-        </tr>
       </thead>
+      <!-- Add content for trader register table if needed -->
     </table>
 
+    <!-- Intermediary Register Table -->
     <table class="intermediaryregister">
       <thead>
         <tr>
@@ -47,10 +48,9 @@
             <h1 class="active">Active Intermediary</h1>
           </th>
         </tr>
-        <tr>
-          <!-- Add content for intermediary table -->
-        </tr>
+        <!-- Add content for intermediary register table if needed -->
       </thead>
     </table>
   </div>
+ 
 </div>

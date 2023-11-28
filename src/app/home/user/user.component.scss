@@ -1,40 +1,40 @@
 .user {
-    color: rgb(99, 79, 79);
-    margin-left: 350px;
-    margin-top: 10px;
+    color: rgb(84, 84, 84);
+    margin-left: 400px;
+    margin-top: 0px;
+    font-size: 25px;
 
 }
 
 .register {
     color: rgb(95, 105, 101);
-    padding: auto;
-    margin-top: 50px;
-
+    
+    margin-top: 0px;
 }
 
 table {
-    margin-left: 50px;
-    border: 50px;
+    margin-left: 80px;
+    border: 1.5px solid rgb(101, 97, 97);
+    /* Removed unnecessary large border value */
     padding: auto;
-    width: 200%;
-
+    width: 100%; /* Set width to 100% for responsiveness */
 }
 
 table td,
 table th {
     border: 1.5px solid rgb(101, 97, 97);
     padding: 10px;
-    min-height: 160px;
-    width: 200%;
-
+   
+    min-height: 170px;
+    width: 100%; /* Set width to 100% for responsiveness */
 }
 
 table thead {
     background-color: blue;
     color: antiquewhite;
-    position: relative;
     padding: 15px;
-
+    width: 150px;
+    /* Adjusted padding for better appearance */
 }
 
 table tbody {
@@ -42,74 +42,33 @@ table tbody {
     color: antiquewhite;
 }
 
-.active-corporate {
-    cursor: pointer;
-}
-
-.active-corporate:hover {
-    cursor: pointer;
-    color: rgb(14, 88, 237);
-    background-color: rgb(252, 252, 252);
-}
-
-.active-trader {
-    cursor: pointer;
-
-}
-
-.active-trader:hover {
-    cursor: pointer;
-    color: rgb(14, 88, 237);
-    background-color: rgb(252, 252, 252);
-}
-
+/* Simplified and adjusted hover styles */
+.active-corporate,
+.active-trader,
 .active-intermediary {
-
     cursor: pointer;
+    
 }
 
+.active-corporate:hover,
+.active-trader:hover,
 .active-intermediary:hover {
     cursor: pointer;
     color: rgb(14, 88, 237);
     background-color: rgb(252, 252, 252);
 }
 
-
-.col-1 {
-    margin-left: 50px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 300px;
-    padding-top: 20px;
-    position: fixed;
-
-}
-
-.col-2 {
-    margin-left: 450px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    width: 300px;
-    padding-top: 20px;
-    margin-top: -240px;
-    position: fixed;
-
-}
-
+/* Simplified and adjusted positioning for columns */
+.col-1,
+.col-2,
 .col-3 {
-    margin-left: 750px;
     display: flex;
     flex-direction: column;
     text-align: center;
     width: 300px;
     padding-top: 20px;
-    margin-top: -185px;
     position: fixed;
-
 }
-
 
 .form-input {
     height: 35px;
@@ -119,42 +78,20 @@ table tbody {
     color: aliceblue;
 }
 
-.form-button {
-    height: 35px;
-    border: 1px solid rgb(0, 121, 48);
-    cursor: pointer;
-    margin-top: 70px;
-    margin-left: 250px;
-    width: 100px;
-    background-color: rgb(188, 77, 77);
-
-}
-
-.form-button-1 {
-    height: 35px;
-    border: 1px solid rgb(0, 121, 48);
-    cursor: pointer;
-    margin-top: 70px;
-    margin-left: 20px;
-    width: 100px;
-    border-radius: 20px;
-    background-color: rgb(160, 255, 160);
-
-
-}
-
+/* Adjusted button styles for consistency */
+.form-button,
+.form-button-1,
 .form-button-2 {
     height: 35px;
     border: 1px solid rgb(0, 121, 48);
     cursor: pointer;
     margin-top: 70px;
-    margin-left: 20px;
-    width: 150px;
-    border-radius: 10px;
-    background-color: rgb(160, 181, 226);
-
+    margin-left: 20px; /* Adjusted margin for consistent spacing */
+    width: auto; /* Set width to auto for responsiveness */
+    border-radius: 10px; /* Applied common border-radius */
 }
 
+/* Adjusted styles for the user view */
 .userview {
     display: flex;
     padding: 2px;
@@ -163,26 +100,13 @@ table tbody {
     position: fixed;
     align-items: center;
     justify-content: space-around;
-
 }
 
-.corporateregister {
-    width: 220px;
-    margin: auto;
-    margin-top: 0px;
-
-
-}
-
-.tradereregister {
-    width: 220px;
-    margin: auto;
-    margin-top: 0px;
-}
-
+/* Adjusted width and margin for the registered sections */
+.corporateregister,
+.tradereregister,
 .intermediaryregister {
-
-    width: 250px;
+    width: 300px;
     margin: auto;
     margin-top: 0px;
 }
@@ -191,20 +115,14 @@ table tbody {
     width: 180px;
     font-size: medium;
     padding-left: 20px;
-
 }
 
+/* Adjusted alignment for table data */
 .tab-data {
     align-items: center;
     margin-left: 50px;
-
 }
 
 tbody {
     text-align: center;
-}
-
-.userview {
-
-    cursor: pointer;
 }

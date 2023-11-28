@@ -1,0 +1,37 @@
+<div class="contiainter">
+    <div class="main-container">
+        <div class="side-nav">
+            <app-user-side-nav></app-user-side-nav>
+        </div>
+        <div class="main">
+            <h2>Welcome, {{ loggedInUserName }}</h2>
+            <div class="dropdown-container">
+                <label class="dropdown-lable">Select Entity</label>
+                <div class="dropdown">
+                    <mat-select placeholder="Select Entity">
+                        <mat-option *ngFor="let entity of entityList" [value]="entity.name">
+                            {{ entity.name }}
+                        </mat-option>
+                    </mat-select>
+                </div>
+            </div>
+             <div class="nav-item">
+                <button class="logout-btn" routerLink="/login">
+                
+                  <span>Logout</span>
+                </button>
+        
+             
+                <button class="Request-button" routerLink="/login">
+                
+                  <span>Request Support</span>
+                </button>
+              </div>
+              
+           
+        </div>
+        
+    </div>
+   
+      
+</div>

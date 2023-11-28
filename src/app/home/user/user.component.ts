@@ -1,37 +1,43 @@
 import { Component, OnInit } from '@angular/core';
-
-import {Router} from '@angular/router';
-
-import { HttpClientModule } from '@angular/common/http';
-import { CorporateregisterService } from 'src/app/service/corporateregister.service';
+import { Router } from '@angular/router';
 import { NetworkcallService } from 'src/app/service/networkcall.service';
-
- 
-
 
 @Component({
   selector: 'app-user',
   templateUrl: './user.component.html',
   styleUrls: ['./user.component.scss']
 })
-export class UserComponent  implements OnInit{
-  corporateuser:any;
- constructor(public url:NetworkcallService){
-}
+export class UserComponent implements OnInit {
+  corporateUsers: any[] = [];
+  selectedUser: any;
+  totalUsers: number = 0;
 
-selectUser(user: any): void {
-  this.selectUser = user;
-}
-ngOnInit(): void {
+
+  constructor(private networkService: NetworkcallService) {}
+
+  ngOnInit(): void {
+    this.fetchCorporateUsers();
   
-  this.url.getcorporateuser().subscribe((res:any) =>{
-    this.corporateuser = res;
-    
-  }); 
+  }
+
+  fetchCorporateUsers(): void {
+    this.networkService.getcorporateuser().subscribe(
+      (res: any[]) => {
+        this.corporateUsers = res;
+        this.totalUsers = res.length;
+        console.log('Corporate users:', res);
+      },
+      (error) => {
+        console.error('Error fetching corporate users:', error);
+      }
+    );
+  }
+
+  selectUser(user: any): void {
+    this.selectedUser = user;
+    // Perform actions on user selection if needed
+  }
+ 
+
+ 
 }
-
-}
-
-
-
-

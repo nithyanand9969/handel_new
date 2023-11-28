@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AuthService } from '../../auth.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-logout',
@@ -7,13 +9,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LogoutComponent implements OnInit {
 
+  constructor(private authService: AuthService,private router:Router ) { }
 
   ngOnInit(): void {
-    throw new Error('Method not implemented.');
+    this.logout();
   }
 
-  
-
-  
-
+  logout() {
+    this.authService.logout().subscribe(
+      () => {
+       this.router.navigate(['/login']);
+      },
+      (      error: any) => {
+        console.error('Logout failed:', error);
+        // Handle logout failure, if needed
+      }
+    );
+  }
 }
